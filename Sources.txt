@@ -1,0 +1,11 @@
+
+BACKGROUND IMAGE:
+Now we want to have a background image on a website that covers the entire browser window at all times.
+
+The requirements are as follows:
+
+Fill the entire page with the image (no white space)
+Scale image as needed
+Center image on page
+Do not cause scrollbars
+The following example shows how to do it; Use the <html> element (the <html> element is always at least the height of the browser window). Then set a fixed and centered background on it

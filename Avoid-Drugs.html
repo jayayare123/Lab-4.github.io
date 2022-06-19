@@ -1,1 +1,99 @@
+<html>
+
+<head>
+    <style>
+        #logo{
+            position: absolute;
+            top:10;
+            left:0;
+        }
+        #logo2{
+            position: absolute;
+            top:15;
+            right:-650;
+        }
+        body {
+            background: url(BACKGROUND.jpg);
+            background-size: cover;
+            color: whitesmoke;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+
+        }
+        
+        ul {
+            list-style-type: none;
+            position: sticky;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #2e9cca;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,.scrollbtn {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 10px 10px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .scroll:hover .scrollbtn {
+            background-color: darkblue;
+        }
+
+        li.scroll {
+            display: inline-block;
+        }
+
+        .scroll-content {
+            display: none;
+            position: absolute;
+            background-color:lightblue;
+        }
+
+        .scroll-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .scroll-content a:hover {
+            background-color: darkblue;
+        }
+
+        .scroll:hover .scroll-content {
+            display: block;
+        }
+
+        #rectangle{
+            border-radius:15px 30px;
+            background:url(dark\ grey3.jpg);
+            color:whitesmoke;
+            border:2px solid white;
+            width:50%;
+            height: auto;
+            padding:20px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            transition: width 2s, height 2s;
+            
+        }
+        #rectangle:hover{
+            width:51%;
+            height:auto;
+        }
+    </style>
+</head>
 

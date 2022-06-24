@@ -2,16 +2,6 @@
 
 <head>
     <style>
-        #logo{
-            position: absolute;
-            top:10;
-            left:0;
-        }
-        #logo2{
-            position: absolute;
-            top:15;
-            right:-650;
-        }
         body {
             background: url(BACKGROUND.jpg);
             background-size: cover;
@@ -20,17 +10,22 @@
         }
 
         h1 {
+            transition-property: color;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
 
         }
-        
+
+        h1:hover {
+            color: darkred;
+        }
+
         ul {
             list-style-type: none;
-            position: sticky;
+            position: ;
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            overflow: auto;
             background-color: #2e9cca;
         }
 
@@ -38,17 +33,18 @@
             float: left;
         }
 
-        li a,.scrollbtn {
+        li a,
+        .scrollbtn {
             display: inline-block;
             color: black;
             text-align: center;
-            padding: 10px 10px;
+            padding: 10px;
             text-decoration: none;
         }
 
         li a:hover,
         .scroll:hover .scrollbtn {
-            background-color: darkblue;
+            background-color: blue;
         }
 
         li.scroll {
@@ -57,8 +53,10 @@
 
         .scroll-content {
             display: none;
-            position: absolute;
-            background-color:lightblue;
+            position: fixed;
+            background-color: lightblue;
+            min-width: 160px;
+
         }
 
         .scroll-content a {
@@ -70,30 +68,48 @@
         }
 
         .scroll-content a:hover {
-            background-color: darkblue;
+            background-color: blue;
         }
 
         .scroll:hover .scroll-content {
             display: block;
         }
 
-        #rectangle{
-            border-radius:15px 30px;
-            background:url(dark\ grey3.jpg);
-            color:whitesmoke;
-            border:2px solid white;
-            width:50%;
-            height: auto;
-            padding:20px;
-            padding-left: 20px;
+        #rectangle {
             box-sizing: border-box;
-            transition: width 1s, height 1s;
-            
+            border-radius: 15px 30px;
+            background: url(dark\ grey3.jpg);
+            color: whitesmoke;
+            border: 2px solid white;
+            width: 50%;
+            height: auto;
+            padding: 20px;
+            transition: width 0.1s, height 0.1s;
+
         }
-        #rectangle:hover{
-            width:51%;
-            height:auto;
+
+        #rectangle:hover {
+            width: 51%;
+            height: auto;
+        }
+
+        #rect2 {
+            box-sizing: border-box;
+            border-radius: 15px 30px;
+            background: url(dark\ grey3.jpg);
+            color: whitesmoke;
+            width: 650px;
+            height: auto;
+            padding: 20px;
+        }
+
+        .footer {
+
+            bottom: 0;
+            background-color: #2e9cca;
+            width: 100%;
+            text-align: center;
+            color: black;
         }
     </style>
 </head>
-
